@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_08_230151) do
+ActiveRecord::Schema.define(version: 2019_12_09_000137) do
 
   create_table "clients", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "cuil"
@@ -36,6 +36,16 @@ ActiveRecord::Schema.define(version: 2019_12_08_230151) do
   create_table "sells", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.string "full_name"
+    t.string "password_digest"
+    t.string "token"
+    t.text "description"
+    t.index ["token"], name: "index_users_on_token", unique: true
   end
 
 end
