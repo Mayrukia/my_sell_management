@@ -1,10 +1,10 @@
 # My Sell Management
-_Aplicación implementada utilizando Ruby on Rails en su última versión estable 6.0.1.
-Funcionará estrictamente como API y utiliza el estándar JSON:API para los intercambios de información._
+_Aplicación que se implementará utilizando Ruby on Rails en su última versión estable 6.0.1.
+Funcionará estrictamente como API y utilizará el estándar JSON:API para los intercambios de información._
 
-- Utiliza Base de datos Mysql.
+- Utilizará Base de datos Mysql.
 
-- Respaldada mediante test de unidad con Rspec.
+- Respaldadará mediante test de unidad con Rspec.
 
 Iniciar la aplicación:
 Correr las migraciones:
