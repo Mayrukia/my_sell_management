@@ -1,8 +1,8 @@
 class Item < ApplicationRecord
     #Relations
     belongs_to :product
-    belong_to :sell
-    belong_to :reservation
+    belongs_to :sell
+    belongs_to :reservation
     #Validations
     validates :code, presence: true, uniqueness: true
     validates :description, presence: true
