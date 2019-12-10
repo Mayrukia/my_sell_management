@@ -1,4 +1,4 @@
-# my_sell_management
+# My Sell Management
 _Aplicación implementada utilizando Ruby on Rails en su última versión estable 6.0.1.
 Funcionará estrictamente como API y utiliza el estándar JSON:API para los intercambios de información._
 
